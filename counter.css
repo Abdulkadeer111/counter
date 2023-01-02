@@ -1,0 +1,166 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+}
+
+.container{
+	height: 400px;
+	width: 250px;
+	background-color: #087;	
+	border-radius: 30px;
+}
+
+
+.container h1{
+	color: #fff;
+	text-align: center;
+	font-size: 26px;
+	padding-top: 15px;
+}
+
+.container h2{
+	font-size: 17px;
+	text-align:left;
+	padding-top: 5px;
+	color: #fff;
+}
+
+.column{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	place-items:center;	
+	align-items: center;
+	margin-top: 30px;		
+	height: 240px;
+	position: relative;	
+}
+
+.left{
+	height: 240px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.display{
+	height: 100px;
+	width: 140px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5rem;
+	background-color: #fff;
+	border-radius: 20px;
+	border: 1px solid red;
+	margin-bottom: 10px;	
+}
+
+
+
+.right{		
+	border-radius: 50px;
+	border: 2px solid white;	
+	position: absolute;	
+	top: 85px;
+	left: 110px;
+}
+
+
+.reset{
+	width: 230px;
+	height: 50px;
+	margin: 5px 0 0 10px;
+	background-color: #f34;
+	border-radius: 50px;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+}
+
+
+#reset{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid red;
+}
+
+
+
+.slider1{
+	-webkit-appearance: none;
+	width: 200px;
+	height: 45px;	
+	background-color:#000;
+	border-radius: 30px;	
+	-webkit-transition: .2s;
+	transition: opacity: .2s;
+	position: absolute;
+	transform: rotate(90deg);
+}
+
+
+.slider1::-webkit-slider-thumb{
+	-webkit-appearance:;
+	min-width: 30px;
+	min-height: 30px;
+	border: 1px solid red;	
+	border-radius: 20px;
+	opacity: 0.9;
+	-webkit-transition: .2s;
+	transition: opacity: .2s;	
+	cursor: pointer;
+}
+
+
+.slider1::-webkit-slider-runnable-track{
+	margin: 0 5px 0 5px;
+	width: 200px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #ff9;
+	cursor: pointer;
+}
+
+
+.slider2{
+	-webkit-appearance:none;
+	width: 225px;
+	height: 45px;
+	background-color: #000;
+	border-radius: 30px;
+	opacity: 0.9;
+	-webkit-transition: .2s;
+	transition: opacity: .2s;
+}
+
+
+.slider2::-webkit-slider-thumb{	
+	min-width: 30px;
+	min-height: 30px;	
+	color: red;
+	border-radius: 20px;
+	opacity: 0.9;
+	-webkit-transition: .2s;
+	transition: opacity: .2s;	
+	cursor: pointer;
+}
+
+
+.slider2::-webkit-slider-runnable-track{
+	margin: 0 5px 0 5px;
+	width: 200px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #223;
+	cursor: pointer;
+}
+
+
